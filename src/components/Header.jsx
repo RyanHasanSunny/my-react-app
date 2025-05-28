@@ -8,18 +8,18 @@ const Header = () => {
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold text-blue-600">
+          <Link to="/" className="text-2xl font-bold text-green-600">
             BrandName
           </Link>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-blue-600 transition">Home</Link>
-            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition">About Us</Link>
-            <Link to="/features" className="text-gray-700 hover:text-blue-600 transition">Features</Link>
-            <Link to="/support" className="text-gray-700 hover:text-blue-600 transition">Support</Link>
-            <Link to="/reviews" className="text-gray-700 hover:text-blue-600 transition">Reviews</Link>
-            <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition">Contact</Link>
+            <Link to="/" className="text-gray-700 hover:text-green-600 transition">Home</Link>
+            <Link to="/about" className="text-gray-700 hover:text-green-600 transition">About Us</Link>
+            <Link to="/features" className="text-gray-700 hover:text-green-600 transition">Features</Link>
+            <Link to="/support" className="text-gray-700 hover:text-green-600 transition">Support</Link>
+            <Link to="/reviews" className="text-gray-700 hover:text-green-600 transition">Reviews</Link>
+            <Link to="/contact" className="text-gray-700 hover:text-green-600 transition">Contact</Link>
           </nav>
           
           {/* Mobile menu button */}
@@ -40,12 +40,12 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 space-y-2 pb-3">
-            <Link to="/" className="block py-2 text-gray-700 hover:text-blue-600 transition">Home</Link>
-            <Link to="/about" className="block py-2 text-gray-700 hover:text-blue-600 transition">About Us</Link>
-            <Link to="/features" className="block py-2 text-gray-700 hover:text-blue-600 transition">Features</Link>
-            <Link to="/support" className="block py-2 text-gray-700 hover:text-blue-600 transition">Support</Link>
-            <Link to="/reviews" className="block py-2 text-gray-700 hover:text-blue-600 transition">Reviews</Link>
-            <Link to="/contact" className="block py-2 text-gray-700 hover:text-blue-600 transition">Contact</Link>
+            <Link to="/" className="block py-2 text-gray-700 hover:text-green-600 transition">Home</Link>
+            <Link to="/about" className="block py-2 text-gray-700 hover:text-green-600 transition">About Us</Link>
+            <Link to="/features" className="block py-2 text-gray-700 hover:text-green-600 transition">Features</Link>
+            <Link to="/support" className="block py-2 text-gray-700 hover:text-green-600 transition">Support</Link>
+            <Link to="/reviews" className="block py-2 text-gray-700 hover:text-green-600 transition">Reviews</Link>
+            <Link to="/contact" className="block py-2 text-gray-700 hover:text-green-600 transition">Contact</Link>
           </nav>
         )}
       </div>

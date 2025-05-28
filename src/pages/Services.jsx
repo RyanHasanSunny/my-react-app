@@ -118,7 +118,7 @@ const Services = () => {
                   </ul>
                 </div>
 
-                <div className="bg-blue-600 text-white px-6 py-2 rounded-md font-medium inline-block">
+                <div className="bg-green-600 text-white px-6 py-2 rounded-md font-medium inline-block">
                   Explore {service.title}
                 </div>
               </div>

@@ -22,12 +22,12 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="hover:text-blue-400 transition">Home</a></li>
-              <li><a href="/about" className="hover:text-blue-400 transition">About Us</a></li>
-              <li><a href="/features" className="hover:text-blue-400 transition">Features</a></li>
-              <li><a href="/support" className="hover:text-blue-400 transition">Support</a></li>
-              <li><a href="/reviews" className="hover:text-blue-400 transition">Reviews</a></li>
-              <li><a href="/contact" className="hover:text-blue-400 transition">Contact</a></li>
+              <li><a href="/" className="hover:text-green-400 transition">Home</a></li>
+              <li><a href="/about" className="hover:text-green-400 transition">About Us</a></li>
+              <li><a href="/features" className="hover:text-green-400 transition">Features</a></li>
+              <li><a href="/support" className="hover:text-green-400 transition">Support</a></li>
+              <li><a href="/reviews" className="hover:text-green-400 transition">Reviews</a></li>
+              <li><a href="/contact" className="hover:text-green-400 transition">Contact</a></li>
             </ul>
           </div>
           
@@ -58,7 +58,7 @@ const Footer = () => {
         {/* Credits */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
           <p>&copy; {currentYear} BrandName. All rights reserved.</p>
-          <p className="mt-2">Designed and developed with ❤️</p>
+          {/* <p className="mt-2">Designed and developed with ❤️</p> */}
         </div>
       </div>
     </footer>

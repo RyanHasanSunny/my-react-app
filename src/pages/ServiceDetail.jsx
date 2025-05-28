@@ -9,7 +9,7 @@ const ServiceDetail = () => {
         return (
             <div className="py-16 text-center">
                 <h1 className="text-3xl font-bold">Service not found</h1>
-                <Link to="/services" className="text-blue-600 mt-4 inline-block">
+                <Link to="/services" className="text-green-600 mt-4 inline-block">
                     Back to Services
                 </Link>
             </div>
@@ -20,7 +20,7 @@ const ServiceDetail = () => {
         <div className="py-16 bg-gray-50 min-h-screen">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <Link to="/services" className="text-blue-600 hover:text-blue-800 inline-flex items-center mb-4">
+                    <Link to="/services" className="text-green-600 hover:text-green-800 inline-flex items-center mb-4">
                         <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
@@ -70,8 +70,8 @@ const ServiceDetail = () => {
                             </div>
                         </div>
 
-                        <div className="bg-blue-50 p-6 rounded-lg">
-                            <h3 className="text-xl font-semibold text-blue-700 mb-3">What's Included:</h3>
+                        <div className="bg-green-50 p-6 rounded-lg">
+                            <h3 className="text-xl font-semibold text-green-700 mb-3">What's Included:</h3>
                             <ul className="space-y-3">
                                 {service.subServices.map((item, i) => (
                                     <li key={i} className="flex items-start">
@@ -90,15 +90,15 @@ const ServiceDetail = () => {
                             <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Packages</h2>
                             <div className="space-y-6">
                                 {service.packages.map((pkg, index) => (
-                                    <div key={index} className="border border-gray-200 rounded-lg p-6 hover:border-blue-300 transition hover:shadow-md">
+                                    <div key={index} className="border border-gray-200 rounded-lg p-6 hover:border-green-300 transition hover:shadow-md">
                                         <div className="flex justify-between items-start mb-3">
                                             <h3 className="text-xl font-bold text-gray-800">{pkg.name}</h3>
-                                            <span className="text-2xl font-bold text-blue-600">{pkg.price}</span>
+                                            <span className="text-2xl font-bold text-green-600">{pkg.price}</span>
                                         </div>
                                         <ul className="space-y-2 mb-6">
                                             {pkg.features.map((feature, i) => (
                                                 <li key={i} className="flex items-start">
-                                                    <svg className="w-4 h-4 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <svg className="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                                     </svg>
                                                     <span className="text-gray-700">{feature}</span>
@@ -107,7 +107,7 @@ const ServiceDetail = () => {
                                         </ul>
                                         <Link
                                             to="/contact"
-                                            className="block w-full bg-blue-600 text-white text-center py-2 rounded-md font-medium hover:bg-blue-700 transition"
+                                            className="block w-full bg-green-600 text-white text-center py-2 rounded-md font-medium hover:bg-green-700 transition"
                                         >
                                             Get Started
                                         </Link>
@@ -122,7 +122,7 @@ const ServiceDetail = () => {
                             <div className="space-y-4">
                                 {['Consultation', 'Planning', 'Execution', 'Delivery'].map((step, i) => (
                                     <div key={i} className="flex items-start">
-                                        <div className="bg-blue-100 text-blue-600 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">
+                                        <div className="bg-green-100 text-green-600 rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">
                                             {i + 1}
                                         </div>
                                         <div>
@@ -142,7 +142,7 @@ const ServiceDetail = () => {
                         {service.testimonials.map((testimonial, index) => (
                             <div key={index} className="bg-gray-50 p-6 rounded-lg">
                                 <div className="flex items-center mb-4">
-                                    <div className="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                    <div className="bg-green-100 text-green-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
                                         {testimonial.author.charAt(0)}
                                     </div>
                                     <h4 className="font-medium text-gray-800">{testimonial.author.split(',')[0]}</h4>

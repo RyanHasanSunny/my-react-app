@@ -73,7 +73,7 @@ const About = () => {
                   <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
-                <p className="text-blue-600 mb-3">{member.role}</p>
+                <p className="text-gray-600 mb-3">{member.role}</p>
                 <div className="flex justify-center space-x-3">
                   <a href="#" className="text-gray-500 hover:text-blue-500">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

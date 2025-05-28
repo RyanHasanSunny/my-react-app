@@ -56,7 +56,7 @@ const Home = () => {
   return (
     <div className="smooth-scroll">
       {/* Hero Section */}
-      <section className="bg-blue-600 text-white py-12 lg:py-20 min-h-screen flex items-center">
+      <section className="bg-gray-800 text-white py-12 lg:py-20 min-h-screen flex items-center">
         <div className="container mx-auto px-4">
           {/* Mobile: Image first */}
           <div className="lg:hidden mb-8 relative">
@@ -88,13 +88,13 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-start">
                 <Link 
                   to="/services" 
-                  className="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition text-center text-sm md:text-base"
+                  className="bg-white text-gray-800 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition text-center text-sm md:text-base"
                 >
                   Explore All Services
                 </Link>
                 <Link 
                   to="/contact" 
-                  className="bg-transparent border-2 border-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-blue-600 transition text-center text-sm md:text-base"
+                  className="bg-transparent border-2 border-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-gray-800 transition text-center text-sm md:text-base"
                 >
                   Get a Quote
                 </Link>
@@ -147,7 +147,7 @@ const Home = () => {
                   <ul className="mb-5 space-y-2">
                     {service.details.map((detail, i) => (
                       <li key={i} className="flex items-start">
-                        <svg className="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-gray-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         <span className="text-gray-700">{detail}</span>
@@ -156,7 +156,7 @@ const Home = () => {
                   </ul>
                   <Link 
                     to="/services" 
-                    className="text-blue-600 font-medium hover:text-blue-800 transition inline-flex items-center"
+                    className="text-green-600 font-medium hover:text-green-800 transition inline-flex items-center"
                   >
                     Learn more
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -171,7 +171,7 @@ const Home = () => {
           <div className="text-center">
             <Link 
               to="/services" 
-              className="inline-block bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition"
+              className="inline-block bg-green-600 text-white px-8 py-3 rounded-md font-medium hover:bg-green-800 transition"
             >
               View All Services
             </Link>
@@ -180,7 +180,7 @@ const Home = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-blue-700 text-white">
+      <section className="py-16 bg-green-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to transform your business?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -188,7 +188,7 @@ const Home = () => {
           </p>
           <Link 
             to="/contact" 
-            className="bg-white text-blue-700 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition inline-block"
+            className="bg-white text-green-700 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition inline-block"
           >
             Start Your Project
           </Link>

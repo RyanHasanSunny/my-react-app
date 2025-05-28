@@ -50,13 +50,13 @@ const Features = () => {
           ))}
         </div>
 
-        <div className="bg-blue-600 text-white p-8 rounded-lg">
+        <div className="bg-green-600 text-white p-8 rounded-lg">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to experience all these features?</h2>
             <p className="text-xl mb-6">
               Sign up today and get started with our platform. No credit card required for the free trial.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition">
+            <button className="bg-white text-green-600 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition">
               Start Your Free Trial
             </button>
           </div>
